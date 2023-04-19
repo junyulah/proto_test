@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "google/protobuf/struct.proto";
+
+option go_package = "types/";
+
+message Example {
+    string message = 1;
+    google.protobuf.Value details = 2;
+}
